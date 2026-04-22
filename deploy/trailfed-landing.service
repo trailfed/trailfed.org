@@ -1,0 +1,27 @@
+[Unit]
+Description=TrailFed landing site (trailfed.org)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=vanlife
+Group=vanlife
+WorkingDirectory=/home/vanlife/trailfed-org
+Environment=NODE_ENV=production
+Environment=PORT=3001
+Environment=HOSTNAME=127.0.0.1
+ExecStart=/usr/bin/npm start --silent
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/vanlife/trailfed-org/.next
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=trailfed-landing
+
+[Install]
+WantedBy=multi-user.target
