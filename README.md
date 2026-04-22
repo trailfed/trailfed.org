@@ -2,8 +2,6 @@
 
 Source for [trailfed.org](https://trailfed.org) — the landing site and server directory for the [TrailFed project](https://github.com/trailfed/trailfed).
 
-Inspired by [joinmastodon.org](https://joinmastodon.org) — same role (entry point + instance catalogue), independent implementation under AGPL.
-
 ## Stack
 
 - Next.js 15 (App Router, standalone output)

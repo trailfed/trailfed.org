@@ -67,8 +67,8 @@ export default function Home() {
               <div>
                 <h3 className="mb-2 font-semibold">ActivityPub under the hood</h3>
                 <p className="text-ink/70">
-                  The same federation protocol powering Mastodon, extended with geo types for places
-                  and trajectories. Your account works across the whole fediverse.
+                  An open W3C federation protocol extended with geo types for places and
+                  trajectories. Your account works across the whole fediverse.
                 </p>
               </div>
             </div>
